@@ -12,3 +12,7 @@ to install all dependecies. Then you can run:
 
 Runs the app in the development mode.<br>
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+
+Provide in REACT_APP_API_URL env variable the url where backend is hosted, for example add in .env file in the root of the project following: REACT_APP_API_URL=http://localhost:5000/api/v1
+
+The backend for the app: https://github.com/Elvin-Va/Ask-IT-Backend
