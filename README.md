@@ -1,8 +1,12 @@
+<h1>Ask-IT-Client</h1>
+
+Clien Application for asking and aswering questions built with React, JSX, ES6, Redux, Redux-Saga, React-Router, Bootstrap,
+
 In the project directory, run:
 
-### `npm start`
+### `npm install`
 
-and
+to install all dependecies. Then you can run:
 
 ### `npm start`
 
