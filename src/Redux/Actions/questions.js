@@ -1,0 +1,43 @@
+export const types = {
+  GET_QUESTIONS: 'GET_QUESTIONS',
+  GET_QUESTIONS_SUCCESS: 'GET_QUESTIONS_SUCCESS',
+  GET_QUESTIONS_FAIL: 'GET_QUESTIONS_FAIL',
+
+  GET_HOT_QUESTIONS: 'GET_HOT_QUESTIONS',
+  GET_HOT_QUESTIONS_SUCCESS: 'GET_HOT_QUESTIONS_SUCCESS',
+  GET_HOT_QUESTIONS_FAIL: 'GET_HOT_QUESTIONS_FAIL',
+
+  GET_MY_QUESTIONS: 'GET_MY_QUESTIONS',
+  GET_MY_QUESTIONS_SUCCESS: 'GET_MY_QUESTIONS_SUCCESS',
+  GET_MY_QUESTIONS_FAIL: 'GET_MY_QUESTIONS_FAIL',
+
+  CREATE_QUESTION: 'CREATE_QUESTION',
+  CREATE_QUESTION_SUCCESS: 'CREATE_QUESTION_SUCCESS',
+  CREATE_QUESTION_FAIL: 'CREATE_QUESTION_FAIL',
+
+  UPDATE_QUESTION: 'UPDATE_QUESTION',
+  UPDATE_QUESTION_SUCCESS: 'UPDATE_QUESTION_SUCCESS',
+  UPDATE_QUESTION_FAIL: 'UPDATE_QUESTION_FAIL',
+};
+
+export const getLatestQuestions = () => ({
+  type: types.GET_QUESTIONS,
+});
+
+export const getMyQuestions = () => ({
+  type: types.GET_MY_QUESTIONS,
+});
+
+export const getHotQuestions = () => ({
+  type: types.GET_HOT_QUESTIONS,
+});
+
+export const createQuestion = (text) => ({
+  type: types.CREATE_QUESTION,
+  payload: { text },
+});
+
+export const updateQuestion = (question) => ({
+  type: types.UPDATE_QUESTION,
+  payload: { question },
+});
